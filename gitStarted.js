@@ -1,0 +1,1 @@
+//This is my external JS file
