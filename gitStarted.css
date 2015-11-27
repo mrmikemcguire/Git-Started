@@ -1,1 +1,22 @@
-//This is my external CSS file
+span
+    {
+    font-style: italic;
+    color: #f05033;
+    }
+
+h2
+    {
+    top-margin: 50px;
+    text-align: center;
+    }
+h3
+    {
+    padding: 75px;
+    }
+
+img.logo 
+    {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
