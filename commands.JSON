@@ -1,0 +1,30 @@
+[
+    {
+    "label": "push",
+    "command": "git push",
+    "variations": 
+        [
+        "git push -u origin master"  
+        ]
+    "level": "committed",
+    "images":
+        [
+        "images/correctPush.png",
+        "images/wrongPush.png"
+        ]
+    },
+    {
+    "label": "add",
+    "command": "git add .",
+    "variations": 
+        [
+        "git add nameOfFile.txt"
+        ]
+    "level": "untracked",
+    "images":
+        [
+        "images/correctAdd.png",
+        "images/wrongAdd.png"
+        ]
+    }
+]
