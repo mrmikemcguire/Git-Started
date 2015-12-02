@@ -20,3 +20,33 @@ img.logo
     margin-left: auto;
     margin-right: auto;
     }
+.page
+    {
+    padding-top: 50px;
+    height: 700px;
+    color: #fff;
+    }
+#first 
+    {
+    background-color: aquamarine;
+    }
+#untracked 
+    {
+    background-color: orange;
+    }
+#staged 
+    {
+    background-color: blue;
+    }
+#committed 
+    {
+    background-color: red;
+    }
+#pushed 
+    {
+    background-color: saddlebrown;
+    }
+#lost
+    {
+    background-color: lightgreen;
+    }
