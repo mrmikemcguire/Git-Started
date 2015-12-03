@@ -17,7 +17,7 @@ $(document).on('click','.navbar-collapse.in',function(e)
         });
     
     var commands =
-        {
+        {{
         label: "push",
         command: "git push",
         AKA: "upload",
