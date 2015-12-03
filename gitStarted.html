@@ -12,7 +12,7 @@
     <style>body{padding-top:50px;}.starter-template{padding:40px 15px;text-align:center;}</style>
 </head>
 
-<body ng-controller = 'CLIController as cli'>
+<body ng-controller = 'CLIController'>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -52,11 +52,11 @@
         </div>
     </div>
         
-    <div ng-repeat = "instruction in cli.instruction">
+    <div ng-repeat = "instruction in instructions">
         <div class="page" id="first">
             <h1>First Time</h1>
-            <h2>{{cli.instruction.command}}</h2>
-            <h2>{{cli.instruction.AKA}}</h2>
+            <h2>{{instruction.command}}</h2>
+            <h2>{{instruction.AKA}}</h2>
         </div>
         <div class="page" id="untracked">
             <h1>Untracked</h1>
