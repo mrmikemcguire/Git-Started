@@ -1,4 +1,3 @@
-var app = angular.module('gitStarted', []);
 
 $(document).on('click','.navbar-collapse.in',function(e)
     {
@@ -10,9 +9,9 @@ $(document).on('click','.navbar-collapse.in',function(e)
 
 (function()
     {
-    var app = angular.module('commands', []);
+    var app = angular.module('cli', []);
     
-    app.controller('CommandsController', function()
+    app.controller('CLIController', function()
         {
         this.instruction = commands;
         });
