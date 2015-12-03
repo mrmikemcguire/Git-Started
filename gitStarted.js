@@ -16,9 +16,8 @@ $(document).on('click','.navbar-collapse.in',function(e)
         $scope.instructions = commands;
         });
     
-<<<<<<< HEAD
     var commands =
-        {{
+        {
         label: "push",
         command: "git push",
         AKA: "upload",
