@@ -2,10 +2,11 @@
     {
     "label": "push",
     "command": "git push",
+    "AKA": "upload",
     "variations": 
         [
         "git push -u origin master"  
-        ]
+        ],
     "level": "committed",
     "images":
         [
@@ -16,10 +17,11 @@
     {
     "label": "add",
     "command": "git add .",
+    "AKA": "track",
     "variations": 
         [
         "git add nameOfFile.txt"
-        ]
+        ],
     "level": "untracked",
     "images":
         [
