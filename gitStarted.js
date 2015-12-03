@@ -9,13 +9,14 @@ $(document).on('click','.navbar-collapse.in',function(e)
 
 (function()
     {
-    var app = angular.module('cli', []);
+    var gitStarted = angular.module('gitStarted', []);
     
-    app.controller('CLIController', function()
+    gitStarted.controller('CLIController', function($scope)
         {
-        this.instruction = commands;
+        $scope.instructions = commands;
         });
     
+<<<<<<< HEAD
     var commands =
         {{
         label: "push",
@@ -47,4 +48,5 @@ $(document).on('click','.navbar-collapse.in',function(e)
             "images/wrongAdd.png"
             ]
         }
+    ];
     })();
