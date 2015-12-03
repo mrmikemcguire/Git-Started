@@ -16,7 +16,7 @@ $(document).on('click','.navbar-collapse.in',function(e)
         this.instruction = commands;
         });
     
-    var commands =
+    var commands = [
         {
         label: "push",
         command: "git push",
@@ -47,4 +47,5 @@ $(document).on('click','.navbar-collapse.in',function(e)
             "images/wrongAdd.png"
             ]
         }
+    ];
     })();
