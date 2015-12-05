@@ -16,36 +16,50 @@ $(document).on('click','.navbar-collapse.in',function(e)
         $scope.instructions = commands;
         });
     
-    var commands =
-        [{
-        label: "push",
-        command: "git push",
-        AKA: "upload",
-        variations: 
-            [
-            "git push -u origin master"  
-            ],
-        level: "committed",
-        images:
-            [
-            "images/correctPush.png",
-            "images/wrongPush.png"
-            ]
-        },
+    gitStarted.controller('arrayController', ['$http', function($http)
         {
-        label: "add",
-        command: "git add .",
-        AKA: "track",
-        variations: 
-            [
-            "git add nameOfFile.txt"
-            ],
-        level: "untracked",
-        images:
-            [
-            "images/correctAdd.png",
-            "images/wrongAdd.png"
-            ]
-        }
-    ];
-    })();
+        var array = this;
+        array.commands = [];
+        $http.get(commands.JSON).success(function(data)
+              {
+              some.commands = data;
+              }
+        })];
+            
+     })();
+    
+//    var commands =
+//        [{
+//        label: "push",
+//        command: "git push",
+//        AKA: "upload",
+//        variations: 
+//            [
+//            "git push -u origin master"  
+//            ],
+//        level: "committed",
+//        images:
+//            [
+//            "images/correctPush.png",
+//            "images/wrongPush.png"
+//            ]
+//        },
+//        {
+//        label: "add",
+//        command: "git add .",
+//        AKA: "track",
+//        variations: 
+//            [
+//            "git add nameOfFile.txt"
+//            ],
+//        level: "untracked",
+//        images:
+//            [
+//            "images/correctAdd.png",
+//            "images/wrongAdd.png"
+//            ]
+//        }
+//    ];
+    
+
+
