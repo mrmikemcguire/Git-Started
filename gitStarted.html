@@ -24,15 +24,15 @@
                 <a class="navbar-brand" href="#"><span>Git Started</span></a>
             </div>
 
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse" ng-controller="PanelController as panel">
                 <ul class="nav navbar-nav" class="nav nav-pills">
                     <li><a href="#">Home</a></li>
-                    <li ng-class="{active:tab ===1}"><a href="#first">First Time</a></li>
-                    <li ng-class="{active:tab ===2}"><a href="#untracked">Untracked</a></li>
-                    <li ng-class="{active:tab ===3}"><a href="#staged">Staged</a></li>
-                    <li ng-class="{active:tab ===4}"><a href="#committed">Committed</a></li>
-                    <li ng-class="{active:tab ===5}"><a href="#pushed" >Pushed</a></li>
-                    <li ng-class="{active:tab ===6}"><a href="#lost" >Lost</a></li>
+                    <li ng-class="{active: panel.isSelected(1)}"><a href ng-click=" panel.selectTab(1)">First Time</a></li>
+                    <li ng-class="{active: panel.isSelected(2)}"><a href ng-click=" panel.selectTab(2)">Untracked</a></li>
+                    <li ng-class="{active: panel.isSelected(3)}"><a href ng-click=" panel.selectTab(3)">Staged</a></li>
+                    <li ng-class="{active: panel.isSelected(4)}"><a href ng-click=" panel.selectTab(4)">Committed</a></li>
+                    <li ng-class="{active: panel.isSelected(5)}"><a href ng-click=" panel.selectTab(5)">Pushed</a></li>
+                    <li ng-class="{active: panel.isSelected(6)}"><a href ng-click=" panel.selectTab(6)">Lost</a></li>
                 </ul>
             </div>
         </div>
