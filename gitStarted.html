@@ -24,9 +24,9 @@
                 <a class="navbar-brand" href="#"><span>Git Started</span></a>
             </div>
 
-            <div class="collapse navbar-collapse" ng-init="tab = 1">
+            <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav" class="nav nav-pills">
-                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
                     <li ng-class="{active:tab ===1}"><a href="#first">First Time</a></li>
                     <li ng-class="{active:tab ===2}"><a href="#untracked">Untracked</a></li>
                     <li ng-class="{active:tab ===3}"><a href="#staged">Staged</a></li>
@@ -48,25 +48,24 @@
             <h1><span>Git Started</span></h1>
             <h2>Learn command line git with the <span class="italic">Just In Time &trade;</span> approach</h2>
     </div>
-        
-    <div ng-repeat = "instruction in instructions" class="page" id="first">
-        <h3>First Time</h3>
+       <h3>First Time</h3>  
+    <div ng-repeat = "instruction in instructions" class="page" id="first" ng-show="tab === 1">
         <h4>*  {{instruction.command}}</h4>
         <h4>*    {{instruction.AKA}}</h4>
     </div>
-    <div class="page" id="untracked" ng-show="tab === 1">
+    <div class="page" id="untracked" ng-show="tab === 2">
         <h1>Untracked</h1>
     </div>
-    <div class="page" id="staged" ng-show="tab === 2">
+    <div class="page" id="staged" ng-show="tab === 3">
         <h1>Staged</h1>
     </div>
-    <div class="page" id="committed" ng-show="tab === 3">
+    <div class="page" id="committed" ng-show="tab === 4">
         <h1>Committed</h1>
     </div>
-    <div class="page" id="pushed" ng-show="tab === 4">
+    <div class="page" id="pushed" ng-show="tab === 5">
         <h1>Pushed</h1>
     </div>
-    <div class="page" id="lost" ng-show="tab === 5">
+    <div class="page" id="lost" ng-show="tab === 6">
         <h2>Lost?</h2>  
         <h2>Type <span>git status</span></h2>  
         <h2>What do you see?</h2>
